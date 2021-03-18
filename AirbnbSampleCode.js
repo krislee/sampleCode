@@ -1,7 +1,9 @@
 /* ------- SNIPPETS OF CODE FROM ELECOMMERCE PROJECT BELOW ------- */
 
+/* ------------------------------------------------------------------ */
+/* ------- SERVER-SIDE WEBHOOK (USING EXPRESS AND STRIPE API) ------- */
+/* ------------------------------------------------------------------ */
 
-// SERVER-SIDE WEBHOOK (USING EXPRESS AND STRIPE API)
 const webhook = async (req, res) => {
     // First, check if webhook signing is configured.
     let data, eventType;
@@ -118,7 +120,10 @@ const webhook = async (req, res) => {
 }
 
 
-// CLIENT-SIDE (USING REACT)
+/* ------------------------------------------------------------------ */
+/* ------- CLIENT-SIDE (USING REACT) ------- */
+/* ------------------------------------------------------------------ */
+
 const addNewShipping = async() => {
     const checkbox = document.querySelector('input[name=saveAddress]')
 
