@@ -74,7 +74,7 @@ const webhook = async (req, res) => {
                         Name: data.object.shipping.name,
                         Address: `${shippingAddress.line1}, ${shippingAddress.line2}, ${shippingAddress.city}, ${shippingAddress.state}, ${shippingAddress.postal_code}`
                     }
-                    // Omitted some code brevity
+                    // Omitted some code for brevity
                 }, {new: true})
 
                 // Omitted some code for brevity
@@ -83,7 +83,7 @@ const webhook = async (req, res) => {
                 // Send back order to client via websocket. The socket is stored on req.io object from server middleware.
                 req.io.to(socketID).emit("completeOrder", {
                     order: updateOrderWithShippingAndPayment
-                    // Omitted some code brevity
+                    // Omitted some code for brevity
                 })
             } else {
                 // For guest customers:
@@ -97,7 +97,7 @@ const webhook = async (req, res) => {
                             Name: data.object.shipping.name,
                             Address: `${shipping.line1}, ${shipping.line2}, ${shipping.city}, ${shipping.state}, ${shipping.postal_code}`
                         }
-                        // Omitted some code brevity
+                        // Omitted some code for brevity
                     }, {new: true})
                     
                     // Omitted some code for brevity
@@ -106,7 +106,7 @@ const webhook = async (req, res) => {
                     // Send back order to client via websocket. The socket is stored on req.io object from server middleware.
                     req.io.to(socketID).emit("completeOrder", {
                         order: updateOrderWithShippingAndPayment
-                        // Omitted some code brevity
+                        // Omitted some code for brevity
                     })
                 } catch(error) {
                     console.log(error)
