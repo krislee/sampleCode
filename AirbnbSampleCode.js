@@ -1,3 +1,6 @@
+/* ------- SNIPPETS OF CODE FROM ELECOMMERCE PROJECT BELOW ------- */
+
+
 // SERVER-SIDE WEBHOOK (USING EXPRESS AND STRIPE API)
 const webhook = async (req, res) => {
     // First, check if webhook signing is configured.
